@@ -16,5 +16,5 @@ def power(base, exp):
     else:
         return base * power(base, exp - 1)
 
-a, b = (map(int, input().split()))
+a, b = (map(lambda x : int(x), input().split()))
 print(power(a,b))
